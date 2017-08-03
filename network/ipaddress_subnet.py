@@ -71,6 +71,7 @@ class NtpUpdater(object):
             fp.writelines(outputText)
 
     def generate_ntp_conf(self, ip, render_file="sample_ntp.conf"):
+        # TODO: 小菜比，生成这个文件之后你可以做mv操作来实际更新
         own_ntp_servers = self.__find_servers(ip)
         self.__render_ntp_conf(ip, own_ntp_servers, render_file)
 
