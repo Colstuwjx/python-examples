@@ -46,10 +46,10 @@ import copy
 
 
 def lol_permutation(players, results, k, N):
-    print results
+    print "Calculating %s..." % results
 
     if k >= N:
-        print results
+        print "☆☆ {} ☆☆".format(results)
     else:
         # due to Python make results arg as pointer
         # we need to copy it as a new object.
